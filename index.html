@@ -1,42 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breaking Bad - A Química do Mal</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breaking Bad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="#">Breaking Bad</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a></li>
+            <li class="nav-item"><a class="nav-link" href="#episodios">Episódios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <section class="container" style="margin-top: 240px;">
-    <div class="d-flex justify-content-center flex-wrap gap-4">
-      <a href="personagens.html" class="card-link">
-        <div class="card bg-dark text-white text-center" style="width: 30rem; min-height: 28rem;">
-          <img src="f34302c3-654f-464d-9db6-4e917eca6880.tmp" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Personagens</h5>
-          </div>
-        </div>
-      </a>
-      <a href="temporadas.html" class="card-link">
-        <div class="card bg-dark text-white text-center" style="width: 30rem; min-height: 28rem;">
-          <img
-            src="https://veja.abril.com.br/wp-content/uploads/2016/11/bbs4-elenco2.jpg?quality=70&strip=all%201386405"
-            class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Temporadas</h5>
-          </div>
-        </div>
-      </a>
+
+  <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container">
+      <p class="lead fs-3">SAY MY NAME</p>
+      <a href="#personagens" class="btn btn-success btn-lg mt-3">Explorar</a>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="sobre" class="section py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="text-center text-success mb-4">Sobre a Série</h2>
+      <p class="text-center fs-5">
+        Walter White, um professor de química do ensino médio, descobre um novo lado da vida ao se unir a seu ex-aluno Jesse Pinkman para produzir a mais pura metanfetamina do sudoeste americano.
+      </p>
+    </div>
+  </section>
+
+  <section id="personagens" class="section py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-success mb-5">Personagens Principais</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-success">
+            <img src="WW.jpg" class="card-img-top" alt="Walter White">
+            <div class="card-body text-white">
+              <h5 class="card-title text-success">Walter White</h5>
+              <p class="card-text">Professor de química que se torna o temido Heisenberg.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-success">
+            <img src="JP.jpg" class="card-img-top" alt="Jesse Pinkman">
+            <div class="card-body text-white">
+              <h5 class="card-title text-success">Jesse Pinkman</h5>
+              <p class="card-text">Parceiro de Walter e responsável pela distribuição.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-success">
+            <img src="GF.jpg" class="card-img-top" alt="Gus Fring">
+            <div class="card-body text-white">
+              <h5 class="card-title text-success">Gus Fring</h5>
+              <p class="card-text">Empresário carismático e um dos maiores traficantes do estado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="episodios" class="section py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="text-center text-success mb-4">Episódios Principais</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark text-white border-success">
+              <strong>Ozymandias</strong> Após o tiroteio no deserto, Hank é morto por Jack, devastando Walt. Jesse é capturado e forçado a cozinhar para os neonazistas. Skyler confronta Walt e luta com ele pelo bebê. Walt foge, liga para a esposa assumindo a culpa e abandona Holly, enquanto sua família e seu império desmoronam.
+            </li>
+            <li class="list-group-item bg-dark text-white border-success">
+              <strong>Face Off</strong> Walt arma com Jesse um plano para matar Gus usando Hector Salamanca. Hector explode a bomba na sala da clínica, matando Gus e Tyrus. Com o cartel destruído, Walt elimina suas últimas ameaças e afirma ter vencido. Jesse descobre que Brock não foi envenenado com ricina, enquanto Walt consolida seu poder.
+            </li>
+            <li class="list-group-item bg-dark text-white border-success">
+              <strong>Say My Name</strong> Mike tenta sair do negócio, mas Walt insiste em manter controle total. Walt faz acordo com Declan e exige respeito ao dizer “Say my name”. Jesse quer abandonar tudo, mas Walt o manipula. Pressionado pela DEA, Mike tenta fugir, mas Walt o mata impulsivamente, mostrando seu avanço completo para o ego e a brutalidade.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center text-success mb-4">Contato</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control bg-black text-white border-success" id="nome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control bg-black text-white border-success" id="email" required>
+        </div>
+        <div class="col-12">
+          <label for="tipo" class="form-label">Tipo de Mensagem</label>
+          <select class="form-select bg-black text-white border-success" id="tipo">
+            <option>Sugestão</option>
+            <option>Dúvida</option>
+            <option>Parceria</option>
+            <option>Crítica</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control bg-black text-white border-success" id="mensagem" rows="4"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success w-100">Enviar Mensagem</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white text-center py-4 border-top border-success">
+    <div class="container">
+      <p class="mb-0">Portal Breaking Bad</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
